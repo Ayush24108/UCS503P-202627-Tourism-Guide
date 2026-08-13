@@ -1,0 +1,902 @@
+\documentclass[12pt,a4paper]{article}
+
+% -------------------- Packages --------------------
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{array}
+
+% -------------------- Hyperlink Setup --------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% -------------------- Section Formatting --------------------
+\titleformat{\section}
+    {\large\bfseries}
+    {\thesection.}
+    {0.5em}
+    {}
+
+\titleformat{\subsection}
+    {\normalsize\bfseries}
+    {\thesubsection}
+    {0.5em}
+    {}
+
+% -------------------- Document --------------------
+\begin{document}
+
+% -------------------- Title Page --------------------
+\begin{center}
+
+    {\Huge \textbf{Tourism Guide Planner}}\\[0.5cm]
+
+    {\Large \textbf{Project Proposal}}\\[1cm]
+
+    \textit{Explore History. Discover Places. Connect with Local Guides.}
+
+    \vfill
+
+    \textbf{Team Project}\\[0.3cm]
+
+    Three-Member Development Team
+
+    \vfill
+
+\end{center}
+
+\newpage
+
+% -------------------- Table of Contents --------------------
+\tableofcontents
+\newpage
+
+
+% =========================================================
+\section{Introduction}
+% =========================================================
+
+Tourism Guide Planner is a web-based tourism platform designed to help
+foreign tourists explore historical places and learn about their history.
+
+The platform provides information about historical destinations, allows
+tourists to search for places they want to visit, and provides a digital
+guide book containing historical information.
+
+A major feature of the platform is the ability for tourists to find and
+hire local guides directly through the website. The platform also includes
+an AI chatbot that allows tourists to ask questions about historical places
+and receive helpful information.
+
+In addition, tourists can upload photographs from the places they visit,
+creating a more interactive and engaging tourism experience.
+
+
+% =========================================================
+\section{Problem Statement}
+% =========================================================
+
+Foreign tourists visiting historical places may face several difficulties
+while exploring a new destination.
+
+Some of the common problems include:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Difficulty finding reliable information about historical places.
+
+    \item Difficulty understanding the historical and cultural importance
+    of a place.
+
+    \item Difficulty finding a suitable local guide.
+
+    \item Lack of a single platform that provides historical information
+    and guide booking together.
+
+    \item Tourists may have questions about a historical place while
+    visiting it but may not have an immediate source for answers.
+
+    \item Language and communication can create difficulties for foreign
+    tourists.
+
+\end{itemize}
+
+Tourism Guide Planner aims to provide a single platform that addresses
+these problems.
+
+
+% =========================================================
+\section{Proposed Solution}
+% =========================================================
+
+Tourism Guide Planner provides a centralized platform where foreign
+tourists can discover historical places, learn about their history, ask
+questions using an AI chatbot, and connect with local guides.
+
+The main components of the proposed solution are:
+
+\begin{enumerate}[leftmargin=*]
+
+    \item Historical Places Explorer
+
+    \item Digital Historical Guide Book
+
+    \item Local Guide Search and Booking
+
+    \item AI Historical Chatbot
+
+    \item Tourist Photo Upload
+
+\end{enumerate}
+
+
+% =========================================================
+\section{Objectives}
+% =========================================================
+
+The main objectives of Tourism Guide Planner are:
+
+\begin{itemize}[leftmargin=*]
+
+    \item To provide foreign tourists with easy access to information about
+    historical places.
+
+    \item To allow tourists to search and explore historical destinations.
+
+    \item To provide detailed historical information through a digital
+    guide book.
+
+    \item To allow tourists to find and hire local guides through the
+    website.
+
+    \item To provide an AI chatbot for answering questions about historical
+    places.
+
+    \item To allow tourists to upload and share photographs from their
+    visits.
+
+    \item To create a platform that can be expanded with additional tourism
+    features in the future.
+
+\end{itemize}
+
+
+% =========================================================
+\section{Key Features}
+% =========================================================
+
+\subsection{Historical Places Search}
+
+Tourists can search for historical places through the website.
+
+Each historical place can have a dedicated page containing information
+such as:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Name of the historical place
+    \item Location
+    \item Historical background
+    \item Important historical events
+    \item Cultural significance
+    \item Architecture and important features
+    \item Interesting facts
+    \item Images
+
+\end{itemize}
+
+
+\subsection{Digital Guide Book}
+
+The platform provides a digital guide book for historical places.
+
+Tourists can use the guide book to understand the history and significance
+of a place before or during their visit.
+
+The guide book can contain:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Historical information
+    \item Important events
+    \item Architecture
+    \item Cultural information
+    \item Interesting facts
+    \item Important locations within the site
+
+\end{itemize}
+
+
+\subsection{Hire a Local Guide}
+
+Tourists can find local guides through the website.
+
+Guide profiles can contain information such as:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Guide name
+    \item Profile photograph
+    \item Experience
+    \item Languages spoken
+    \item Rating
+    \item Reviews
+    \item Availability
+
+\end{itemize}
+
+Tourists can select a guide and submit a booking request for their visit.
+
+
+\subsection{AI Historical Chatbot}
+
+The platform includes an AI chatbot that allows tourists to ask questions
+about historical places.
+
+For example, a tourist can ask:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Who built this monument?
+    \item When was this place constructed?
+    \item Why is this place historically important?
+    \item What happened at this location?
+    \item What are the important things to see here?
+    \item Tell me an interesting fact about this place.
+
+\end{itemize}
+
+The chatbot is designed to provide quick and understandable information
+to tourists.
+
+
+\subsection{Tourist Photo Upload}
+
+Tourists can upload photographs from their visits.
+
+Photos can be associated with the historical place that the tourist visited.
+
+This feature can help create a more interactive tourism platform where
+tourists can share their travel experiences.
+
+
+% =========================================================
+\section{Project Workflow}
+% =========================================================
+
+The basic workflow of the platform is:
+
+\begin{verbatim}
+
+                         TOURIST
+                            |
+                            v
+                 Search Historical Place
+                            |
+                            v
+                 View Historical Details
+                            |
+              +-------------+-------------+
+              |             |             |
+              v             v             v
+         Guide Book    AI Chatbot    Hire a Guide
+              |             |             |
+              |             |             v
+              |             |       Select Guide
+              |             |             |
+              |             |             v
+              |             |       Booking Request
+              |             |
+              +-------------+-------------+
+                            |
+                            v
+                       Visit Place
+                            |
+                            v
+                      Upload Photos
+
+\end{verbatim}
+
+
+% =========================================================
+\section{System Architecture}
+% =========================================================
+
+The platform follows a client-server architecture.
+
+The frontend provides the user interface for tourists and guides. The
+backend manages application logic, user information, historical places,
+guides, bookings, and uploaded content.
+
+The AI service handles questions asked through the chatbot.
+
+\begin{verbatim}
+
+                         TOURIST
+                            |
+                            v
+                  +-------------------+
+                  |     FRONTEND      |
+                  |   React / Next.js |
+                  +---------+---------+
+                            |
+                            v
+                  +-------------------+
+                  |      BACKEND      |
+                  | Node.js / Express |
+                  +---------+---------+
+                            |
+              +-------------+-------------+
+              |             |             |
+              v             v             v
+        +-----------+ +-----------+ +-----------+
+        | Database  | | AI Service| | Maps API  |
+        |           | | Chatbot   | | Location  |
+        +-----------+ +-----------+ +-----------+
+              |
+              v
+        +----------------+
+        | Media Storage  |
+        | Tourist Photos |
+        +----------------+
+
+\end{verbatim}
+
+
+% =========================================================
+\section{Technology Stack}
+% =========================================================
+
+\subsection{Frontend}
+
+The frontend can be developed using:
+
+\begin{itemize}[leftmargin=*]
+
+    \item React.js / Next.js
+    \item JavaScript
+    \item HTML5
+    \item CSS3
+    \item Tailwind CSS
+    \item Responsive Web Design
+
+\end{itemize}
+
+
+\subsection{Backend}
+
+The backend can be developed using:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Node.js
+    \item Express.js
+    \item REST APIs
+
+\end{itemize}
+
+
+\subsection{Database}
+
+The application can use a database such as:
+
+\begin{itemize}[leftmargin=*]
+
+    \item MongoDB
+
+    \item PostgreSQL
+
+\end{itemize}
+
+The database can store:
+
+\begin{itemize}[leftmargin=*]
+
+    \item User information
+    \item Historical places
+    \item Guide profiles
+    \item Guide availability
+    \item Booking information
+    \item Reviews and ratings
+    \item Tourist photographs
+
+\end{itemize}
+
+
+\subsection{Artificial Intelligence}
+
+The AI chatbot can use an AI/LLM API such as:
+
+\begin{itemize}[leftmargin=*]
+
+    \item OpenAI API or another suitable LLM service
+    \item Retrieval-Augmented Generation (RAG), if required
+    \item Historical knowledge base
+
+\end{itemize}
+
+
+\subsection{Maps and Location}
+
+A map service such as Google Maps API can be integrated to display the
+locations of historical places and provide location-related information.
+
+
+\subsection{Deployment}
+
+The application can be deployed using cloud platforms such as:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Vercel
+    \item AWS
+    \item Cloud database services
+    \item Cloud storage for tourist photographs
+
+\end{itemize}
+
+
+% =========================================================
+\section{User Roles}
+% =========================================================
+
+\subsection{Tourist}
+
+Tourists can:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Create an account
+    \item Search historical places
+    \item Read historical information
+    \item Use the digital guide book
+    \item Ask questions using the AI chatbot
+    \item Search for local guides
+    \item View guide profiles
+    \item Submit guide booking requests
+    \item Upload photographs
+    \item Share their travel experience
+
+\end{itemize}
+
+
+\subsection{Local Guide}
+
+Local guides can:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Create a guide profile
+    \item Add their experience
+    \item Add languages they speak
+    \item Add availability
+    \item Receive booking requests
+    \item Manage bookings
+    \item Receive reviews and ratings
+
+\end{itemize}
+
+
+\subsection{Administrator}
+
+The administrator manages the platform and can:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Add and manage historical places
+    \item Update historical information
+    \item Manage tourist accounts
+    \item Manage guide profiles
+    \item Verify guides
+    \item Manage bookings
+    \item Manage uploaded content
+    \item Manage reviews
+
+\end{itemize}
+
+
+% =========================================================
+\section{AI Chatbot}
+% =========================================================
+
+The AI chatbot is one of the major features of the project.
+
+The basic chatbot workflow is:
+
+\begin{verbatim}
+
+Tourist Question
+       |
+       v
+   AI Chatbot
+       |
+       v
+Question Processing
+       |
+       v
+Historical Knowledge
+       |
+       v
+    AI / LLM
+       |
+       v
+   AI Response
+
+\end{verbatim}
+
+The chatbot can answer questions related to historical places and provide
+information in a simple and understandable format.
+
+
+% =========================================================
+\section{Guide Booking Flow}
+% =========================================================
+
+The guide booking process can follow these steps:
+
+\begin{verbatim}
+
+Tourist
+   |
+   v
+Select Historical Place
+   |
+   v
+Click "Hire a Guide"
+   |
+   v
+View Available Guides
+   |
+   +-- Experience
+   +-- Languages
+   +-- Rating
+   +-- Reviews
+   +-- Availability
+   |
+   v
+Select Guide
+   |
+   v
+Select Date and Time
+   |
+   v
+Submit Booking Request
+   |
+   v
+Guide Confirmation
+   |
+   v
+Visit / Tour
+   |
+   v
+Review and Rating
+
+\end{verbatim}
+
+
+% =========================================================
+\section{Scalability and Future Scope}
+% =========================================================
+
+The platform can be expanded with additional features as the project grows.
+
+\subsection{Audio Guide Book}
+
+The digital guide book can be extended into an audio guide.
+
+Tourists could listen to information about a historical place while exploring
+the location.
+
+\begin{verbatim}
+
+Historical Place
+       |
+       v
+   Audio Guide
+       |
+       +-- History
+       +-- Architecture
+       +-- Important Events
+       +-- Interesting Facts
+
+\end{verbatim}
+
+
+\subsection{AI Voice Guide}
+
+The AI chatbot can be extended into a voice-based guide.
+
+A future system could convert AI-generated answers into audio using
+text-to-speech technology.
+
+\begin{verbatim}
+
+Tourist Question
+       |
+       v
+    AI Answer
+       |
+       v
+ Text-to-Speech
+       |
+       v
+Audio Explanation
+
+\end{verbatim}
+
+
+\subsection{Multi-language Support}
+
+Since the platform is designed for foreign tourists, future versions can
+support multiple languages.
+
+The historical guide book and AI chatbot can be extended to provide
+information in different languages.
+
+
+\subsection{Mobile Application}
+
+The website can later be extended into Android and iOS applications.
+
+Possible mobile features include:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Historical place search
+    \item GPS-based location services
+    \item Audio guide
+    \item AI chatbot
+    \item Guide booking
+    \item Tourist photo uploads
+
+\end{itemize}
+
+
+\subsection{Tourist Photo Community}
+
+The photo upload system can be expanded into a community feature.
+
+Tourists could:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Upload photographs
+    \item Add captions
+    \item Tag historical places
+    \item Share travel experiences
+    \item View photographs from other tourists
+
+\end{itemize}
+
+
+\subsection{Expansion to More Destinations}
+
+The platform can initially focus on selected historical places and later
+expand to:
+
+\begin{itemize}[leftmargin=*]
+
+    \item More cities
+    \item More states
+    \item More countries
+    \item Heritage sites
+    \item Cultural destinations
+
+\end{itemize}
+
+
+% =========================================================
+\section{Security}
+% =========================================================
+
+The platform should follow standard security practices, including:
+
+\begin{itemize}[leftmargin=*]
+
+    \item Secure authentication
+    \item Role-based authorization
+    \item Input validation
+    \item API security
+    \item HTTPS
+    \item Secure database access
+    \item Environment variables for API keys
+    \item File type and size validation for photo uploads
+
+\end{itemize}
+
+
+% =========================================================
+\section{GitHub Repository Structure}
+% =========================================================
+
+The proposed GitHub repository structure is:
+
+\begin{verbatim}
+
+Tourism-Guide-Planner/
+|
++-- frontend/
+|   +-- components/
+|   +-- pages/
+|   +-- services/
+|   +-- hooks/
+|   +-- assets/
+|
++-- backend/
+|   +-- controllers/
+|   +-- models/
+|   +-- routes/
+|   +-- middleware/
+|   +-- services/
+|
++-- ai/
+|   +-- chatbot/
+|   +-- knowledge/
+|
++-- uploads/
+|
++-- docs/
+|
++-- .env.example
++-- .gitignore
++-- package.json
++-- README.md
++-- project-proposal.tex
++-- project-proposal.pdf
+
+\end{verbatim}
+
+
+% =========================================================
+\section{Team Collaboration}
+% =========================================================
+
+The project is developed by a three-member team.
+
+\begin{center}
+
+\begin{tabular}{|p{0.30\textwidth}|p{0.55\textwidth}|}
+\hline
+\textbf{Team Member} & \textbf{Main Responsibility} \\
+\hline
+Member 1 & Frontend, UI/UX, Historical Places \\
+\hline
+Member 2 & Backend, Database, Guide Booking \\
+\hline
+Member 3 & AI Chatbot, Guide Book, Photo Upload \\
+\hline
+
+\end{tabular}
+
+\end{center}
+
+For GitHub collaboration, each team member can work on a separate branch:
+
+\begin{verbatim}
+
+main
+ |
+ +-- frontend
+ |
+ +-- backend
+ |
+ +-- ai-features
+
+\end{verbatim}
+
+Completed work can be submitted through Pull Requests and merged into the
+main branch after review.
+
+
+% =========================================================
+\section{Development Roadmap}
+% =========================================================
+
+\subsection*{Phase 1 -- Project Foundation}
+
+\begin{itemize}[leftmargin=*]
+
+    \item Project setup
+    \item GitHub repository setup
+    \item Basic website interface
+    \item Database setup
+    \item Authentication
+
+\end{itemize}
+
+
+\subsection*{Phase 2 -- Historical Places}
+
+\begin{itemize}[leftmargin=*]
+
+    \item Historical place search
+    \item Historical place pages
+    \item Digital guide book
+    \item Images and location information
+
+\end{itemize}
+
+
+\subsection*{Phase 3 -- Guide System}
+
+\begin{itemize}[leftmargin=*]
+
+    \item Guide profiles
+    \item Guide search
+    \item Guide availability
+    \item Guide booking
+    \item Reviews and ratings
+
+\end{itemize}
+
+
+\subsection*{Phase 4 -- AI and Tourist Features}
+
+\begin{itemize}[leftmargin=*]
+
+    \item AI historical chatbot
+    \item Historical knowledge integration
+    \item Tourist photo upload
+    \item Tourist experience features
+
+\end{itemize}
+
+
+\subsection*{Phase 5 -- Future Scalability}
+
+\begin{itemize}[leftmargin=*]
+
+    \item Audio guide book
+    \item AI voice guide
+    \item Multi-language support
+    \item Mobile application
+    \item Location-based features
+    \item Expansion to more destinations
+
+\end{itemize}
+
+
+% =========================================================
+\section{Expected Outcome}
+% =========================================================
+
+The expected outcome of Tourism Guide Planner is a website where foreign
+tourists can search for historical places, learn about their history, ask
+questions using an AI chatbot, and find and book local guides.
+
+The platform will also allow tourists to upload photographs from their visits.
+
+The project is designed so that additional features such as audio guide books,
+AI voice assistance, multilingual support, mobile applications, and expansion
+to more historical destinations can be added in the future.
+
+
+% =========================================================
+\section{Conclusion}
+% =========================================================
+
+Tourism Guide Planner aims to make exploring historical places easier and
+more informative for foreign tourists.
+
+By combining historical place information, a digital guide book, local guide
+booking, an AI historical chatbot, and tourist photo uploads, the platform
+provides multiple useful tourism services in one website.
+
+The project also provides a foundation for future features such as audio
+guides, multilingual support, AI voice assistance, mobile applications, and
+expansion to more historical destinations.
+
+\begin{center}
+
+\vspace{0.5cm}
+
+\textbf{Explore History. Discover Places. Connect with Local Guides.}
+
+\end{center}
+
+\end{document}
