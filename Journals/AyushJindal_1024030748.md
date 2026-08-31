@@ -8,6 +8,7 @@ During the first week, our team finalized the idea for the Tourism Guide Planner
 Learning/Outcome:
 We gained a clear understanding of the project's objectives, proposed features, target users, and overall system requirements.
 
+
 Week 2 – Understanding LLMs and AI Chatbot
 
 Work Done:
@@ -17,3 +18,14 @@ The chatbot could help tourists ask questions about destinations, attractions, t
 
 Learning/Outcome:
 I developed a basic understanding of LLMs, their role in AI applications, and their potential use in our project. This helped us refine the project's AI component and plan for the implementation of an AI-based tourism chatbot in the upcoming weeks.
+
+
+Week 3 – LLM API Integration and Chatbot Prototype
+
+Work Done:
+During the third week, I focused on the practical implementation of the AI chatbot. After understanding the basic concepts of LLMs, I integrated an LLM API into the Tourism Guide Planner to establish communication between the application and the language model.
+
+I implemented the API communication process, including sending user queries to the model and receiving the generated responses. I also tested different types of tourism-related queries to verify whether the chatbot could provide relevant and meaningful responses. Basic prompt structuring was explored to guide the model toward acting as a tourism assistant rather than providing completely generic responses.
+
+Learning/Outcome:
+I gained hands-on experience in API integration, request-response communication, and interacting with an LLM through an application. A basic working chatbot prototype was successfully established, providing a foundation for further integration with the Tourism Guide Planner's itinerary and destination-planning features.
