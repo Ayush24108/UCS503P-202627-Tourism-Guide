@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/database");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 
@@ -9,16 +10,17 @@ const guideRouter = require("./routes/guide");
 const bookingRouter = require("./routes/booking");
 const reviewRouter = require("./routes/review");
 
-app.use("/api", authRouter);
-app.use("/api", placeRouter);
-app.use("/api", guideRouter);
-app.use("/api", bookingRouter);
-app.use("/api", reviewRouter);
+app.use(express.json());
+app.use(cookieParser());
+
+app.use("/", authRouter);
+app.use("/", placeRouter);
+app.use("/", guideRouter);
+app.use("/", bookingRouter);
+app.use("/", reviewRouter);
 
 connectDB()
   .then(() => {
-    console.log("Database Connected Successfully");
-
     app.listen(7777, () => {
       console.log("Server is running on port 7777");
     });

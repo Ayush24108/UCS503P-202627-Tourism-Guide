@@ -77,6 +77,7 @@ const userSchema = new mongoose.Schema(
 
         bio: {
             type: String,
+            default: "I am interested in exploring historical places.",
             maxlength: 500,
             trim: true
         },
