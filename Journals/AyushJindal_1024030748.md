@@ -13,7 +13,8 @@ Contributed to the initial project proposal.
 Outcome
 
 Gained a clear understanding of the project's objectives, features, target users, and system requirements.
-Week 2: Understanding LLMs and the AI Chatbot
+
+##Week 2: Understanding LLMs and the AI Chatbot
 
 Work Done
 
@@ -25,7 +26,8 @@ Outcome
 
 Developed a basic understanding of LLMs and their role in AI applications.
 Helped refine the AI component of the project and planned its implementation.
-Week 3: Exploring LLM API Integration
+
+##Week 3: Exploring LLM API Integration
 
 Work Done
 
@@ -37,9 +39,9 @@ Outcome
 
 Gained hands-on experience with API requests and responses when interacting with an LLM.
 Built an early understanding that served as the foundation for the full chatbot implementation in Week 4.
-Week 4: Chatbot Implementation and Repository Submission
 
-(8 October 2026)
+##Week 4: Chatbot Implementation and Repository Submission
+
 
 Work Done
 
