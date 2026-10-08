@@ -1,5 +1,7 @@
-Weekly Work Journal: AI Chatbot Module
-Week 1: Project Planning
+# Weekly Work Journal
+
+## Week 1: Project Planning and Documentation
+
 
 Work Done
 
