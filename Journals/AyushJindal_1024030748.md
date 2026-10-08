@@ -3,7 +3,7 @@
 ## Week 1: Project Planning and Documentation
 
 
-Work Done
+### Work Done
 
 Took part in team discussions to finalize the idea for the Tourism Guide Planner.
 Identified the problems tourists face while planning trips, such as finding suitable destinations, organizing itineraries, and getting reliable travel information.
