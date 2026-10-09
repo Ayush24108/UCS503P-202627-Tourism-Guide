@@ -83,3 +83,29 @@
 - Created the basic backend structure for further API development.
 - Improved understanding of MongoDB relationships, API routes, and backend application flow.
 - Prepared the project for the next stage, which is developing and testing the APIs.
+
+
+## Week 5: Backend API Testing and Preparation for Frontend Integration
+
+### Work Done
+
+* Continued working on the backend of the Tourism Guide Planner project.
+* Reviewed the authentication APIs for signup, login, and logout.
+* Started testing the backend APIs to check whether requests and responses were working correctly.
+* Tested the JWT authentication middleware to understand how protected routes verify logged-in users.
+* Checked the Historical Places APIs for adding, viewing, updating, and deleting historical places.
+* Tested the Guide APIs for fetching guide information from the database.
+* Reviewed the Booking APIs for creating bookings, viewing booking details, and updating booking status.
+* Tested the Review APIs for submitting ratings and comments and viewing reviews of guides.
+* Checked the connection between the Express backend and MongoDB database.
+* Reviewed the API routes, database models, and field names to identify possible errors.
+* Planned the next steps for connecting the backend with the frontend.
+
+### Outcome
+
+* Improved understanding of backend API testing and debugging.
+* Reviewed the main functionality of authentication, historical places, guide booking, and reviews.
+* Identified the importance of validating requests, handling errors, and protecting routes.
+* Prepared the backend for further testing and frontend integration.
+* Planned the next stage of development, including profile management and connecting the frontend to the backend.
+
