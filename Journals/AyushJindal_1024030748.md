@@ -55,3 +55,26 @@ Tested with the Gemini API and resolved API key problems, a retired model name, 
 Switched to the Groq API (Llama 3.3 70B) for more reliable free access. Both test cases passed: a grounded fact answer and a valid JSON itinerary.
 Stored the API key in a .env file excluded through .gitignore, with an env.example template for teammates.
 Uploaded the module to a fork of the team repository and prepared a pull request for review.
+
+## Week 5: Debugging, Testing and Backend Preparation of the Chatbot
+
+### Work Done
+
+Reviewed the chatbot files and the chat page on the website, and found two problems: every itinerary request returned the same plan, and some facts were wrong.
+Found three gaps in the chatbot module: it assumed a place was already selected, it took the number of days from outside instead of from the tourist’s message, and it did not check the places in the AI’s itinerary against the database.
+Updated the chatbot to:
+find the place from the tourist’s own words, including spelling variants like “Amber Fort” and follow-up questions like “when was it built?”
+read the city, number of days, interests and start time from the message
+plan only with places from the requested city
+remove made-up or repeated places from the AI’s itinerary
+Added three new features: travel-time estimates between two places (calculated from map coordinates instead of guessed by the AI), general travel advice answers, and support for trips covering more than one city.
+Fixed an API failure caused by Groq retiring the model we used (404 error). Read Groq’s deprecation notice, switched to the recommended replacement model, and made the model name a setting in the .env file so future changes need no code edit. Also added a 20-second request timeout and clearer error messages.
+Built a test suite with 37 scenarios: single-day and multi-day itineraries, place facts, travel time, general advice, and edge cases such as an unknown city, an unknown place, an empty message, an off-topic request and a prompt-injection attempt. Results are shown as PASS, FAIL, WARN or REVIEW, and the suite waits and retries automatically when the API rate limit is hit.
+Ran the suite on the real model: 35 of 37 cases passed, 1 failed, and there were 3 soft warnings about the AI’s wording.
+Prepared the backend integration: a controller and route (POST /api/chatbot, login required) that load places from MongoDB, pass them to the chatbot, and return an honest error instead of a fake reply if the chatbot fails. Tested it against a simulated database, with all 18 checks passing.
+
+ ### Outcome
+
+The chatbot now handles four request types (place facts, itineraries, travel time and general advice) and gives different, checked results for different queries.
+Learned about handling retired API models, rate limits and timeouts, validating AI output against real data, building a structured test suite, and how grounding works: answers are only as correct as the facts stored in the database.
+Next steps: review the 1 failed case and 3 warnings, ask the backend teammate to add coordinates, category, visit duration and area to HistoricalPlace, verify the database facts against reliable sources, and merge the chatbot route and connect it to the frontend.
